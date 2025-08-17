@@ -53,13 +53,11 @@ export default function Header()
           <div className=" flex flex-row items-center min-w-screen justify-center border-b h-20 bg-white text-black overflow-hidden" >
               <div className="w-1/8">
                 <Menu />
-
               </div>
               
               <Link href={'/'} className="w-3/4 flex justify-center"><Image src={'/Logo.gif'} alt="menu" width={250} height={100} className="invert"/></Link>
               <div className="flex flex-row justify-between items-center w-1/8">
-                <Link href={'/sign-in'} className={` ${isLoggedIn?'hidden':''}`}><Image src={'/icons/profile.png'} width={35} height={35} alt="prof"/></Link>
-                <Link href={'/profile'} className={` ${isLoggedIn?'':'hidden'}`}><ProfileBtn/></Link>
+                <ProfileBtn/>
                 <Cart />
               
               </div>
