@@ -1,10 +1,11 @@
-'use client';
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import Menu from "./menu";
 import Cart from "./cart";
+import ProfileBtn from './profileBtn';
+
+
 
 function Truck(){
   return <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor"><path d="M3 7h11v7h2l3-4h2v7h-2a2 2 0 1 1-4 0H9a2 2 0 1 1-4 0H3V7zm4 9a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm10 0a1 1 0 1 0 .001 2.001A1 1 0 0 0 17 16z"/></svg>
@@ -39,29 +40,31 @@ function USPStrip() {
 }
 
 
+
+
 export default function Header()
 {
-    const [openMenu, setOpenMenu] = useState(false);
-    const [openCart, setOpenCart] = useState(false);
 
-
+    const isLoggedIn = true; // fix this ?
 
     return(
         <div className="sticky top-0 z-20">
 
           <div className=" flex flex-row items-center min-w-screen justify-center border-b h-20 bg-white text-black overflow-hidden" >
+              <div className="w-1/8">
+                <Menu />
+
+              </div>
               
-              <button onClick={()=>setOpenMenu(!openMenu)} className="w-1/8"><Image src={'/icons/menuu.gif'} alt="menu" width={40} height={40} className="ml-10 invert"></Image></button>
               <Link href={'/'} className="w-3/4 flex justify-center"><Image src={'/Logo.gif'} alt="menu" width={250} height={100} className="invert"/></Link>
               <div className="flex flex-row justify-between items-center w-1/8">
-                <Link href={'/sign-in/'}><Image src={'/icons/profile.png'} width={35} height={35} alt="prof"/></Link>
-                <button onClick={()=>setOpenCart(!openCart)}><Image src={'/icons/cart.gif'} alt="menu" width={40} height={40} className="mr-10 invert"></Image></button>
+                <Link href={'/sign-in'} className={` ${isLoggedIn?'hidden':''}`}><Image src={'/icons/profile.png'} width={35} height={35} alt="prof"/></Link>
+                <Link href={'/profile'} className={` ${isLoggedIn?'':'hidden'}`}><ProfileBtn/></Link>
+                <Cart />
               
               </div>
               
           </div>
-          <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
-          <Cart openCart={openCart} setOpenCart={setOpenCart} />
           <USPStrip/>
         </div>
 

@@ -18,7 +18,7 @@ export default function sign()
                     <form className="w-full"
                         action={async () => {
                         "use server"
-                        return signIn("google")
+                        return signIn("google", { callbackUrl: "/" });
                         }}
                     >
                         <button type="submit" className="border rounded-3xl p-2 flex flex-row items-center justify-center w-full
