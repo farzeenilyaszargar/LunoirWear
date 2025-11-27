@@ -1,26 +1,25 @@
-import Banner from "@/components/banners";
-import FAQ from "@/components/faq";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-import Reviews from "@/components/reviews";
-import Shop from "@/components/shop";
-import Trust from "@/components/trust";
-import Load from '@/components/load';
+import Banner from "@/components/Banner";
+import FAQ from "@/components/Faq";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Reviews from "@/components/Reviews";
+import Shop from "@/components/Shop";
+import Trust from "@/components/Trust";
+import Load from '@/components/Loading';
+import Shop2 from "@/components/Shop2";
 
 
 export default function Home() {
   return (
     <div >
-       
       <Load/>
       <Header/>
       <Banner/>
       <Shop/>
-
+      {/* <Shop2/> */}
       <Reviews/>
-
       <FAQ/>
-      <Trust/>
+      {/*<Trust/>*/}
       <Footer/>
     </div>
   );

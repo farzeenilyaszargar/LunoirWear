@@ -1,7 +1,7 @@
 
 import { signIn } from "@/auth"
-import Footer from "@/components/footer";
-import Header from "@/components/header";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Image from "next/image";
 import EmailComp from "./emailComponent";
 
@@ -12,7 +12,7 @@ export default function SignIn()
         <div>
             <Header/>
             <div className="h-140 w-screen flex justify-center items-center flex-col">
-                <div className="flex items-center justify-center p-10 pb-15 rounded-2xl flex-col w-1/3 border">
+                <div className="flex items-center justify-center p-10 pb-15 rounded-2xl flex-col md:w-1/3 border">
                     <h1 className="text-2xl mb-5 font-bold">Sign Up</h1>
 
                     <form className="w-full"

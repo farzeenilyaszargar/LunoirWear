@@ -14,7 +14,7 @@ export default async function ProfileBtn() {
           <Image
             src={user.image ?? "/icons/profile.png"}
             alt={user.name ?? "User"}
-            className="h-7 w-7 mb-1 rounded-full"
+            className="min-h-7 min-w-7 mb-1 rounded-full"
             width={25}
             height={25}
           />
@@ -27,6 +27,7 @@ export default async function ProfileBtn() {
             className="h-8 w-8 rounded-full mb-1"
             width={25}
             height={25}
+            unoptimized
           />
         </Link>
       )}

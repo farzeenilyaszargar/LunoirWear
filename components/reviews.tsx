@@ -28,7 +28,7 @@ export default function EndlessReviewStrip() {
   return (
     <div className="w-full space-y-4 pt-5 mb-10 scroll-mt-50" id="review-section">
       <div className="flex flex-row justify-center items-center overflow-hidden h-10 mb-5">
-        <Image src={'/REVIEWS.gif'} alt="reviews" width={200} 
+        <Image src={'/REVIEWS.gif'} alt="reviews" width={200} unoptimized
         height={100} ></Image>
       </div>
       {/* Row A (left) */}

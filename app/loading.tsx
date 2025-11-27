@@ -9,6 +9,9 @@ export default function Loading()
               src="/shirt-bg.gif" 
               alt="Splash animation"
               className="w-48 h-48 object-contain"
+              width={100}
+              height={100}
+              unoptimized
             />
           </div>
     );

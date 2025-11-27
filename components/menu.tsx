@@ -15,13 +15,13 @@ export default function Menu()
 
 
     <div>
-        <button onClick={()=>setOpenMenu(!openMenu)} className=""><Image src={'/icons/menuu.gif'} alt="menu" width={40} height={40} className=" invert ml-10"></Image></button>
+        <button onClick={()=>setOpenMenu(!openMenu)} className=""><Image src={'/icons/menuu.gif'} alt="menu" width={40} height={40} className=" invert md:ml-10 ml-5"></Image></button>
         
         <div className={`flex flex-col bg-white opacity-95 w-2/3 md:w-1/4 h-screen text-black fixed top-0 left-0 z-10 transition-all ease-in-out duration-500 ${openMenu?"translate-x-0" : "-translate-x-full"}`}>
-            <button className={`flex h-20 justify-center items-center w-fit ml-10 text-white text-4xl z-10`} onClick={()=>{setOpenMenu(!openMenu)}}>
-                <Image src={'/icons/cross.png'} alt='cross' width={40} height={40} className="invert"/>
+            <button className={`flex h-20 justify-center items-center w-fit md:ml-10 ml-5 text-white text-4xl z-10`} onClick={()=>{setOpenMenu(!openMenu)}}>
+                <Image src={'/icons/cross.png'} alt='cross' width={40} height={40} className="invert" unoptimized/>
             </button> 
-            <div className="flex flex-col justify-around h-1/2 ml-10">
+            <div className="flex flex-col justify-around h-1/2 ml-10 ">
                 <Link href={'/about'} className="hover:font-black">about ☺️</Link>
                 <Link href={'/tp'}className="hover:font-black">track packages 📦</Link>
                 <Link href={'/wreview'}className="hover:font-black">write a review ✍️</Link>
