@@ -4,19 +4,21 @@ import { products } from "@/lib/products";
 import next from "next";
 import Image from "next/image";
 
+export default async function ShopPage({ params, }: { params: Promise<{ id: string }> }) {
+    const { id } = await params
+    const prodId = Number(id);
 
-export default function ShopPage({ params }: { params: { id: string } }) {
-    const prodId = Number(params.id)
     const item = products.find(i => i.id == prodId);
 
     return (
         <div>
+
             <Header />
             <div className="flex justify-center items-center w-screen py-10 px-5">
                 <div className="sm:w-1/3 w-screen  group rounded-2xl bg-white border border-zinc-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div className="relative aspect-square ">
                         <div className="absolute inset-0 grid place-items-center bg-zinc-100 overflow-hidden ">
-                            <Image src={item?.image ?? "/" } alt={item?.name ?? "alt"} width={200} height={200} className="w-full" />
+                            <Image src={item?.image ?? "/"} alt={item?.name ?? "alt"} width={200} height={200} className="w-full" />
                         </div>
                         <span className="absolute left-2 top-2 rounded-full bg-black px-2 py-1 text-[10px] font-medium text-white">{item?.badge}</span>
                     </div>
