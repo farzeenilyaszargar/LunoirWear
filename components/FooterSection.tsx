@@ -9,7 +9,7 @@ export default function Footer()
         <div className="w-screen flex flex-row justify-around items-center p-5 h-60 gap-5 bg-white  text-black">
             <div className="flex-col items-center justify-center hidden md:flex ">
                 <div className="overflow-hidden h-20 flex justify-center items-center">
-                    <Link href={'/'}><Image src={'/Logo.gif'} alt="menu" width={150} height={50} className="fliter invert"/></Link>
+                    <Link href={'/'}><Image src={'/Logo.gif'} alt="menu" width={150} height={50} className="fliter invert" unoptimized/></Link>
                 </div>
                 <h1>designed for your comfort</h1>
             </div>
@@ -28,13 +28,13 @@ export default function Footer()
             </div>
             <div className=" w-1/6 h-full rounded-lg overflow-hidden flex-col items-center justify-center hidden md:flex ">
                 <div className="flex flex-row justify-center items-center h-15">
-                    <Image src={'/sendus.gif'} alt="send designs" width={150} height={150}/>
+                    <Image src={'/sendus.gif'} alt="send designs" width={150} height={150} unoptimized/>
                 </div>
 
                 <div className="mt-5">
                     <div className=" w-auto rounded-4xl border border-white bg-black flex justify-center items-center shadow-lg hover:filter hover:invert  duration-300 ease-in-out">
                         <div className="absolute flex flex-row items-center justify-center">
-                            <Image src={'/icons/down-icon.png'} alt="down-arrow" width={20} height={20} className="filter invert mr-2"/>
+                            <Image src={'/icons/down-icon.png'} alt="down-arrow" width={20} height={20} className="filter invert mr-2" unoptimized/>
 
                             <span className="block text-white font-semibold text-sm">Upload Your Files</span>
                         </div>

@@ -1,6 +1,7 @@
-import { createClient } from "@supabase/supabase-js";
+import { client } from "@/lib/supabaseClient";
 
-export const client = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_KEY!,
-)
+export async function GET() {
+  const { data, error } = await client.from("users").select("*");
+
+  return Response.json({ data, error });
+}

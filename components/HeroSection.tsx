@@ -6,7 +6,7 @@ export default function Banner() {
     return (
         <div className="md:h-90 flex flex-col justify-center items-center overflow-hidden">
             <div className="flex flex-col justify-center items-center md:h-60 h-50 ">
-                <Image src={'/hero.gif'} alt="quote" width={600} height={300} className=" "></Image>
+                <Image src={'/hero.gif'} alt="quote" width={600} height={300} className=" " unoptimized/>
             </div>
             <div className="flex flex-row justify-around  md:w-80 w-70">
                 <Link href={'#shop-section'} className="bg-black  rounded-4xl font-medium p-2 pl-4 pr-4 text-white flex flex-row items-center justify-around border border-white

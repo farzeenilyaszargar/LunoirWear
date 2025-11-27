@@ -41,11 +41,11 @@ export default function Cart() {
     return (
 
         <div className="md:ml-5">
-            <button onClick={() => setOpenCart(!openCart)} className=""><Image src={'/icons/cart.gif'} alt="menu" width={40} height={40} className="md:mr-10 mr-5 invert"></Image></button>
+            <button onClick={() => setOpenCart(!openCart)} className=""><Image src={'/icons/cart.gif'} alt="menu" width={40} height={40} className="md:mr-10 mr-5 invert" unoptimized /></button>
 
             <div className={`flex flex-col items-end bg-white opacity-95 w-2/3 md:w-1/3 h-screen text-black fixed top-0 right-0 z-10 transition-all ease-in-out duration-500 ${openCart ? "translate-x-0" : "translate-x-full"}`}>
                 <button className={`flex h-20 justify-center items-center w-fit  md:mr-10  mr-5 text-white text-4xl z-10`} onClick={() => { setOpenCart(!openCart) }}>
-                    <Image src={'/icons/cross.png'} alt='cross' width={40} height={40} className="invert" />
+                    <Image src={'/icons/cross.png'} alt='cross' width={40} height={40} className="invert" unoptimized/>
                 </button>
                 <div className="flex flex-col items-center min-w-full">
                     <div className="w-3/4 border rounded ">
