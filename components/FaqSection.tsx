@@ -11,7 +11,7 @@ export default function FAQ(){
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
         <h2 className="text-2xl font-bold">Questions? We’ve got answers.</h2>
         <div className="mt-6">
-          {faqs.map((f, i)=> (
+          {faqs.map((f)=> (
             <details key={f.q} className="group mb-1 open:bg-zinc-50 rounded-2xl border border-zinc-300">
               <summary className="flex cursor-pointer items-center justify-between p-4 hover:bg-zinc-50  rounded-2xl">
                 <span className="font-medium">{f.q}</span>

@@ -12,7 +12,6 @@ import USPStrip from "./USP";
 
 export default function Header() {
 
-  const isLoggedIn = true; // fix this ?
 
   return (
     <div className="sticky top-0 z-20">

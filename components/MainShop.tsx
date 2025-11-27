@@ -58,7 +58,7 @@ export default function ProductGrid() {
   )
 }
 
-function ProductCard({ id, name, price, color, badge, tcolor, image, rating, totalReviews, sizes }: { id:number, name: string; price: number; color: string; tcolor: string; badge: string; image: string, rating: number, totalReviews: number, sizes: string[] }) {
+function ProductCard({ id, name, price, badge, image, sizes }: { id:number, name: string; price: number; badge: string; image: string, sizes: string[] }) {
   return (
     <a href={"/shop/"+id} className="group rounded-2xl bg-white border border-zinc-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
       <div className="relative aspect-square ">

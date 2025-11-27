@@ -1,6 +1,5 @@
 
 import { signIn } from "@/auth"
-import Footer from "@/components/FooterSection";
 import Header from "@/components/MainHeader";
 import Image from "next/image";
 import EmailComp from "./emailComponent";
