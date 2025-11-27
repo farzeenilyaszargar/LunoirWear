@@ -1,8 +1,8 @@
 import Banner from "@/components/HeroSection";
 import FAQ from "@/components/FaqSection";
-import Footer from "@/components/Footer";
+import Footer from "@/components/FooterSection";
 import Header from "@/components/MainHeader";
-import Reviews from "@/components/Reviews";
+import Reviews from "@/components/ReviewsArea";
 import Shop from "@/components/MainShop";
 import Load from '@/components/StartLoad';
 
